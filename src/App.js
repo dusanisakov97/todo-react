@@ -32,6 +32,13 @@ function App() {
     setTodos(newTodos);
   };
 
+  const updateTodo = (index, newText) => {
+    const newTodos = [...todos];
+    newTodos[index] = newText;
+    setTodos(newTodos);
+    localStorage.setItem("todos", JSON.stringify(newTodos));
+  };
+
   return (
     <div className="App">
       <header>
@@ -42,7 +49,7 @@ function App() {
         setInputText={setInputText}
         addTodo={addTodo}
       />
-      <TodoList todos={todos} deleteTodo={deleteTodo} />
+      <TodoList todos={todos} deleteTodo={deleteTodo} updateTodo={updateTodo} />
     </div>
   );
 }
