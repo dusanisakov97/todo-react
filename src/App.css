@@ -23,6 +23,7 @@ form {
 }
 form input,
 form button {
+  max-width: 100vh;
   padding: 0.5rem;
   font-size: 2rem;
   border: none;
