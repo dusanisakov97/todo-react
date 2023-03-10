@@ -23,11 +23,11 @@ form {
 }
 form input,
 form button {
-  max-width: 100vh;
   padding: 0.5rem;
   font-size: 2rem;
   border: none;
   background: white;
+  max-width: 80%;
 }
 form button {
   color: #702963;
@@ -115,7 +115,6 @@ button.complete-btn {
   }
   form input,
   form button {
-    max-width: 80vh;
     padding: 0.3rem;
     font-size: 1.5rem;
   }
