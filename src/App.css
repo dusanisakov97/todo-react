@@ -61,8 +61,13 @@ form button:hover {
   flex: 1;
 }
 .todo-item {
+  max-width: 100vh;
   padding: 0rem 0.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
+
 .trash-btn,
 .complete-btn,
 .edit-btn {
@@ -100,4 +105,20 @@ form button:hover {
 button.complete-btn {
   width: 48px;
   height: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+  form input,
+  form button {
+    padding: 0.3rem;
+    font-size: 1.5rem;
+  }
+  .todo-list {
+    min-width: 80%;
+    font-size: 1.2rem;
+  }
 }
